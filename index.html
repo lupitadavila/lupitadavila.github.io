@@ -1,1 +1,84 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lupita Davila</title>
+</head>
+<body>
+
+	<header>
+		<h1>Lupita Davila:</h1>
+		<h2>Learning to code</h2>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#comparison">Comparing Sites</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<img src="images/3pgb5eqvaie-lorenzo-cafaro.jpg" alt="Code on computer screen" style="max-width:100%;height: auto;text-align:center;"/>
+		<p><strong>Photo Credit:</strong> <a href="http://www.lorenzocafaro.com/">Lorenzo Cafaro</a></p>
+	</header>
+	<hr>
+	<section id="about">
+		<h2>About</h2>
+		<h3>Starting the Journey</h3>
+		<p>I am in the Fireflies cohort in Dev Bootcamp. My journey with coding started in an intro to programming course where I learned Python. I then was able to take several other classes in C, C++, and Java</p>
+		<h3>Topics of Interest</h3>
+		<p>Out of all of the topics and languages in web development, these are the ones that I am most excited to learn:</p>
+		<ul>
+			<li>Databases</li>
+			<li>Javascript Frameworks</li>
+			<li>MVC Frameworks</li>
+			<li>Understanding APIs</li>
+		</ul>
+	</section>
+	<hr>
+	<section id="comparison">
+		<h2>Comparing websites</h2>
+		<p>In order for inspiration, I was able to find several other personal websites of developers. One that stood out to me was the following: <a href="http://riccardozanutta.com/">http://riccardozanutta.com/</a></p>
+
+		<h3>The Good</h3>
+		<ul>
+			<li>Great visual design and background shape effect in the main header</li>
+			<li>Awesome animations in the content transitions (slow-loading)</li>
+			<li>Clear navigation that is fixed on the top of the page</li>
+			<li>Concise and straight to the point content that makes it clear it is a portfolio</li>
+		</ul>
+		<h3>The Bad</h3>
+		<ul>
+			<li>The about section has bolded orange words that can be mistaken for links</li>
+		</ul>
+	</section>
+	<hr>
+	<section id="contact">
+	<h2>Contact</h2>
+	<form name="contact" action="https://httpbin.org/post" method="post">
+
+		<fieldset>
+			<div>
+				<label>Full Name: </label>
+				<input type="text" name="fullname">
+			</div>
+			<div>
+				<label>Email: </label>
+				<input type="email" name="email">
+			</div>
+			<div>
+				<div><label>Message: </label></div>
+				<div><textarea name="comments" rows="10" cols="50">Write your message.</textarea></div>
+			</div>
+			<div>
+		      <input type="checkbox" name="agree" value="agree">
+		      I agree to the <a href="terms.html">Terms & Conditions</a>
+		    </div>
+		</fieldset>
+		<br>
+		<button type="submit">Send Message</button>
+
+	</form>
+	</section>
+
+
+</body>
+</html>
