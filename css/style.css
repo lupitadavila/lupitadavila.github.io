@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Raleway:300');
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+
+	padding: 0;
+	margin: 0;
+
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Bungee', cursive;
+}
+/*TOP HEADER*/
+header{
+	position: relative;
+}
+header .page-header{
+	position: absolute;
+	background: rgba(255, 255, 255, 0.8);
+	top: 45%;
+    left: 3%;
+    z-index: 2;
+}
+header .page-header h1{
+	padding: 10px;
+	margin: 0;
+}
+
+header #banner img {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+}
+
+/* NAVIGATION */
+nav{
+	background: url("../images/pattern.png");
+	min-height: 80px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+nav > ul{
+	list-style-type: none;
+	margin: 0;
+}
+nav > ul > li{
+	display: inline-block;
+	padding: 10px 15px;
+	border-right: 1px solid #222;
+	margin-top: 20px;
+}
+nav a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav a:hover {
+    color: #25a6c7;
+}
+nav a:visited {
+    color: #ef9c7a;
+}
+
+/* MAIN CONTENT */
+.content{
+	 padding: 50px;
+}
+#about {
+    border: 30px solid #444;
+    border-left-width: 25px;
+    border-right-width: 25px;
+}
+
+
+#comparison {
+    background: #dbdbdb;
+}
+
+#contact {
+    background: #f7f7f7;
+    text-align: center;
+}
+#contact fieldset {
+    width: auto;
+    display: inline-block;
+    margin: 25px 0;
+}
+/* MEDIA QUERIES */
+
+/* TABLETS AND SMALLER */
+@media screen and (max-width: 768px){
+	nav{
+		position: static;
+	}
+	nav > ul > li{
+		display: block;
+	}
+
+	header .page-header{
+		position: static;
+	}
+	header #banner img {
+		height: auto;
+	    min-height: 0;
+	}
+}
